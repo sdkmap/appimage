@@ -24,7 +24,7 @@ on:
         default: https://github.com/minecraft-linux/mcpelauncher-ui-manifest
       mcpelauncher-ui-ref:
         type: string
-        default: ${{ github.repository == 'minecraft-linux/mcpelauncher-ui-manifest' && (github.ref_name == 'ng' && github.sha) || 'ng' }}
+        default: ${{ github.repository == 'sdkmap/mcpelauncher-ui-qt' && (github.ref_name == 'ng' && github.sha) || 'ng' }}
       mcpelauncher-ui-qt6-ref:
         type: string
         default: ${{ github.repository == 'minecraft-linux/mcpelauncher-ui-manifest' && (github.ref_name == 'qt6' && github.sha) || 'qt6' }}
